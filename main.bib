@@ -23,19 +23,39 @@
 	year={2024}
 }
 
-@misc{xia2024leaderboardrankingcoding,
-	title={Top Leaderboard Ranking = Top Coding Proficiency, Always? EvoEval: Evolving Coding Benchmarks via LLM}, 
-	author={Chunqiu Steven Xia and Yinlin Deng and Lingming Zhang},
-	year={2024},
-	eprint={2403.19114},
-	archivePrefix={arXiv},
-	primaryClass={cs.SE},
-	url={https://arxiv.org/abs/2403.19114}, 
-}
-
 @article{satvaty2024undesirable,
 	title={Undesirable memorization in large language models: A survey},
 	author={Satvaty, Ali and Verberne, Suzan and Turkmen, Fatih},
 	journal={arXiv preprint arXiv:2410.02650},
 	year={2024}
+}
+
+@inproceedings{emergent_memo,
+	author = {Biderman, Stella and Prashanth, USVSN Sai and Sutawika, Lintang and Schoelkopf, Hailey and Anthony, Quentin and Purohit, Shivanshu and Raff, Edward},
+	title = {Emergent and predictable memorization in large language models},
+	year = {2023},
+	publisher = {Curran Associates Inc.},
+	address = {Red Hook, NY, USA},
+	abstract = {Memorization, or the tendency of large language models (LLMs) to output entire sequences from their training data verbatim, is a key concern for deploying language models. In particular, it is vital to minimize a model's memorization of sensitive datapoints such as those containing personal identifiable information (PII). The prevalence of such undesirable memorization can pose issues for model trainers, and may even require discarding an otherwise functional model. We therefore seek to predict which sequences will be memorized before a large model's full train-time by extrapolating the memorization behavior of lower-compute trial runs. We measure memorization in the Pythia model suite and plot scaling laws for forecasting memorization, allowing us to provide equi-compute recommendations to maximize the reliability (recall) of such predictions. We additionally provide further novel discoveries on the distribution of memorization scores across models and data. We release all code and data necessary to reproduce the results in this paper at https://github.com/EleutherAI/pythia.},
+	booktitle = {Proceedings of the 37th International Conference on Neural Information Processing Systems},
+	articleno = {1219},
+	numpages = {19},
+	location = {New Orleans, LA, USA},
+	series = {NIPS '23}
+}
+
+@inproceedings{
+	bordt2024elephants,
+	title={Elephants Never Forget: Memorization and Learning of Tabular Data in Large Language Models},
+	author={Sebastian Bordt and Harsha Nori and Vanessa Cristiny Rodrigues Vasconcelos and Besmira Nushi and Rich Caruana},
+	booktitle={First Conference on Language Modeling},
+	year={2024},
+	url={https://openreview.net/forum?id=HLoWN6m4fS}
+}
+
+@article{benchmark_cheater,
+	title={Don't make your llm an evaluation benchmark cheater},
+	author={Zhou, Kun and Zhu, Yutao and Chen, Zhipeng and Chen, Wentong and Zhao, Wayne Xin and Chen, Xu and Lin, Yankai and Wen, Ji-Rong and Han, Jiawei},
+	journal={arXiv preprint arXiv:2311.01964},
+	year={2023}
 }
