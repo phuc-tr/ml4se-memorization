@@ -3,19 +3,21 @@
 % - Raise the research question.
 Large language models (LLMs) have emerged as powerful tools in software engineering, offering substantial benefits to a multitude of programming tasks \cite{llm_application_se}. They can achieve state-of-the-art performance on several code benchmarks, demonstrating remarkable proficiency in areas like code generation, completion, and translation. \cite{roziere2023code}, \cite{hui2024qwen2}. 
 %We've mentioned 2 code models here, should we stick to code models? Will this affect our model choice at all?
-However, these advancements raise a fundamental question: Do LLMs truly generalize to new programming problems, or are they merely recalling memorized data that was seen in the training process? 
+However, these advancements raise a fundamental question: Do LLMs truly generalize to new programming problems, or are they merely recalling memorized content that was seen in the training process? 
 
-Prompting LLMs with queries in datasets that has been seen in the training process is considered a case of data contamination or leakage \cite{benchmark_cheater}. Memorization happens when the data was seen repeatedly in the training process that the LLMs can generate it consistently \cite{emergent_memo} \cite{bordt2024elephants}.
-Recent research on memorization on LLMs were performed on the assumption that a dataset has been seen in the training process <cite>. They further unveil the effect of memorization by comparing the similarities between LLMs output and the training data <cite>. Input data mutation were also investigated to understand the <<<something here>>>. However, the study of how LLMs memorize code translation tasks is yet to be discussed.
+Prompting LLMs with queries in datasets that have been seen in the training process is considered a case of data contamination or leakage \cite{benchmark_cheater}. Memorization happens when the data was seen repeatedly in the training process such that the LLMs can generate it consistently \cite{emergent_memo} \cite{bordt2024elephants}. Memorization can be desirable or undesirable \cite{undesirablememorizationlargelanguage}. While desirable memorization can be beneficial for model performance \cite{memorizegeneralizeevaluatingllm}, undesirable memorization leads to transparency and auditing issues, making it difficult to distinguish whether specific outputs result from generalization or memorized content, and inflating performance on seen benchmark \cite{undesirablememorizationlargelanguage}.
 
 
 % Introduce to the study of LLMs memorization in general and in software engineer task.
-% - Recent research on LLMs memorization and their limitation.
-% - Conclude that research on code-code is limited.
+% - Recent research on LLMs memorization and their limitation:
+% 	- Comparing outputs
+% 	- Input mutation
+% - Conclude that research on code translation is limited.
 
-Recent research measure memorization by ... <cite>. However, this assume access to training data, or access to the model... However, the study of undesired memorization of LLMs in code translation task is yet to be investigated.
+Recent research on memorization in LLMs was performed on the assumption that a dataset had been seen in the training process to unveil the effect of memorization by comparing the similarities between LLM output and the training data \cite{mem_stackoverflow} \cite{demystifying} \cite{memorizegeneralizeevaluatingllm}. Input data mutation was also investigated to understand memorization \cite{demystifying} \cite{memorizegeneralizeevaluatingllm}. However, the study of LLM memorization in code translation tasks is yet to be discussed.
 
-Input data mutation ... where the input code is rewritten 
+
+
 
 % Our work
 % - What will we do in this paper.
